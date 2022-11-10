@@ -208,57 +208,6 @@ public class TreapMap<K extends Comparable<K>,V>  implements Treap<K,V>  {
         }
         return (Treap<K, V> []) new Treap[]{tl,tr};
     }
-//    private V recursiveSplit(TreapNode<K,V> root, K key){
-//        // BASE CASE: node is null
-//        if (root == null) {
-//            return null;
-//        }
-//        int compared = key.compareTo( root.key);
-//        // if the key is less than the root node, search in the left subtree
-//        if (compared < 0) {
-//            return recursiveLookup(root.left, key);
-//        }
-//        // otherwise, search in the right subtree
-//        return recursiveLookup(root.right, key);
-//    }
-
-
-
-//    private TreapNode<K, V>[] split(TreapNode<K,V> root, K key)
-//    {
-//        TreapNode[] arr = new TreapNode[2];
-//        if (root == null) {
-//            arr[0] = null;
-//            arr[1] = null;
-//            return arr;
-//        }
-//      int compared = root.key.compareTo(key);
-//      if(compared == 0) {
-//          arr[0] = root.left;
-//          arr[1] = root.right;
-//      }
-//      if(compared > 0)
-//      {
-//          TreapNode[] res = split(root.left,key);
-//        TreapNode<K,V> nodeRight = new TreapNode(root.key,root.value);
-//          nodeRight.left = arr[0];
-//          nodeRight.right = root.right;
-//        arr[0] = res[0];
-//        arr[1] = nodeRight;
-//        return arr;
-//      }
-//      else
-//      {
-//          TreapNode[] res = split(root.right,key);
-//          TreapNode<K,V> nodeLeft = new TreapNode(root.key,root.value);
-//          nodeLeft.left = root.left;
-//          nodeLeft.right = res[0];
-//          arr[0] = res[0];
-//          arr[1] = nodeLeft;
-//          return arr;
-//      }
-//    }
-  
 
     @Override
     public void join(Treap<K, V> t) {
