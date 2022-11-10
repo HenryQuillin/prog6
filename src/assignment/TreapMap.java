@@ -345,7 +345,6 @@ public class TreapMap<K extends Comparable<K>,V>  implements Treap<K,V>  {
     // Function to print binary tree in 2D
     // It does reverse inorder traversal
     private final int COUNT = 10;
-    // TODO: change variable names and shi
     private void recursivePrint(TreapNode<K,V> root, int space)
     {
         if (root == null)
